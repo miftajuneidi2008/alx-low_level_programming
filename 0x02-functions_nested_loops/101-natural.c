@@ -1,17 +1,19 @@
 #include <stdio.h>
 /**
-  * main - computes and prints the sum of all the multiples of
-  * 3 or 5 below 1024.
-  * Return: Nothing.
-  */
-
+ *main - check for multiples of 3 and 5
+ *
+ *Return: 0 always
+ */
 int main(void)
 {
-	int i, res;
-
-	for (i = 0; i < 1024; i++)
-		if (i % 3 == 0 || i % 5 == 0)
-			res += i;
-	printf("%d\n", res);
-	return (0);
+int x = 1024, y, sum = 0;
+for (y = 0; y < x; y++)
+{
+if ((y % 3 == 0) || (y % 5 == 0))
+{
+sum = sum + y;
+}
+}
+printf("%d\n", sum);
+return (0);
 }
