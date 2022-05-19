@@ -4,10 +4,11 @@
  * @h: head of linked list
  * Return: number of nodes
  */
-size_t print_listint(const listint_t *h)
+
+size_t list_len(const list_t *h)
 {
 	unsigned int i = 0;
-	const listint_t *temp_h = h;
+	const list_t *temp_h = h;
 
 	while (temp_h)
 	{
